@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>智保同行：領事保護知識隨身帶</title>
+    <meta name="description" content="您的海外安全守護者 - 提供領事保護、緊急求助及全球風險地圖" />
+    <meta name="theme-color" content="#1A2B6D" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'deep-blue': '#0a0f2e',
+              'ocean-blue': '#1A2B6D',
+              'alert-red': '#D52B1E',
+              'gold': '#FFD700',
+            },
+            fontFamily: {
+              sans: ['-apple-system', 'BlinkMacSystemFont', "Segoe UI", "Roboto", "Microsoft JhengHei", 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- PWA Manifest Placeholder (In a real build, this would be a separate file) -->
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIuamuuS/neWQjOihjCIsCiAgInNob3J0X25hbWUiOiAi5pm65L+dIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMxQTJCNkQiLAogICJ0aGVtZV9jb2xvciIjogIiMxQTJCNkQiLAogICJpY29ucyI6IFtdCn0=" />
+
+    <!-- D3 and TopoJSON for Globe -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    
+    <style>
+      /* Critical CSS for loading state */
+      body { background: linear-gradient(180deg, #0a0f2e 0%, #1A2B6D 100%); margin: 0; color: white; }
+      .loader { width: 40px; height: 40px; border: 3px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: #FFD700; animation: spin 1s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "d3": "https://esm.sh/d3@^7.9.0",
+    "topojson-client": "https://esm.sh/topojson-client@^3.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

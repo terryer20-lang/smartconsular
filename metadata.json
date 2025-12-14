@@ -1,0 +1,7 @@
+{
+  "name": "智保同行 (Smart Consular Protection)",
+  "description": "An intelligent mobile-first web application providing global consular protection knowledge, emergency assistance, and risk assessment maps. Upgraded to 2025 web standards with React, Tailwind CSS, and PWA capabilities. Optimizations include: LCP reduction via critical CSS inlining (Tailwind), CLS minimization through fixed aspect ratios, FID improvement with efficient React hydration, and offline support via Service Worker caching.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
